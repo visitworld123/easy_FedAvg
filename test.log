@@ -1,0 +1,177 @@
+nohup: 忽略输入
+FedAvg - 2023-08-01 20:34:24,479 record.py[line:53] INFO FSSL_label_ratio: 0.05
+TwoCropTransform: False
+augmentation: default
+bs: 64
+client_num: 10
+client_num_per_round: 5
+data_dir: /home/zqy2139219/zqy/data
+data_sampler: Random
+dataloader_workers: 0
+dataset: cifar10
+fedprox: False
+global_round: 1000
+gpu_index: 0
+image_resize: 32
+input_channels: 3
+level_n_lowerb: 0.5
+level_n_system: 0.6
+log_level: INFO
+lr: 0.01
+model: resnet18
+model_out_feature: True
+model_out_feature_layer: last
+momentum: 0.9
+nesterov: False
+num_classes: 10
+opti: SGD
+output_dim: 10
+partition_alpha: 0.1
+partition_method: hetero
+record_tool: wandb
+seed: 0
+task: classification
+tensorboard_dir: /output/tensorboard/logs
+wandb_project: testtest
+wandb_record: True
+wd: 0.0001
+wandb: Currently logged in as: visitworld. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.13.2
+wandb: Run data is saved locally in /home/zqy2139219/FedAvg/wandb/run-20230801_203426-30g16tij
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run test
+wandb: ⭐️ View project at https://wandb.ai/visitworld/testtest
+wandb: 🚀 View run at https://wandb.ai/visitworld/testtest/runs/30g16tij
+FedAvg - 2023-08-01 20:34:34,746 loader.py[line:119] INFO dataset augmentation: default, resize: 32
+FedAvg - 2023-08-01 20:34:35,410 loader.py[line:529] INFO N = 50000
+FedAvg - 2023-08-01 20:34:35,419 loader.py[line:309] INFO the distribution of client : {0: {0: 976, 1: 1632, 2: 18, 3: 1120, 5: 132, 7: 636, 8: 3101}, 1: {1: 1, 5: 59, 7: 3, 8: 851, 9: 4228}, 2: {1: 814, 2: 212, 3: 3735, 5: 2737}, 3: {0: 46, 1: 291, 3: 4, 8: 401, 9: 123}, 4: {0: 125, 2: 1, 3: 137, 4: 1476, 6: 303, 8: 642, 9: 47}, 5: {0: 1923, 1: 381, 2: 3826}, 6: {1: 334, 2: 3, 3: 3, 4: 2477, 5: 2055, 7: 1543}, 7: {0: 6, 1: 1546, 2: 881, 7: 591, 8: 4, 9: 6}, 8: {0: 435, 2: 58, 4: 1046, 5: 16, 6: 4536}, 9: {0: 1489, 1: 1, 2: 1, 3: 1, 4: 1, 5: 1, 6: 161, 7: 2227, 8: 1, 9: 596}}
+FedAvg - 2023-08-01 20:34:35,420 loader.py[line:212] INFO Client 2, noise level: 0.6649, real noise ratio: 0.5928, real noise num: 4445.0000
+FedAvg - 2023-08-01 20:34:35,420 loader.py[line:212] INFO Client 3, noise level: 0.5209, real noise ratio: 0.4578, real noise num: 396.0000
+FedAvg - 2023-08-01 20:34:35,420 loader.py[line:212] INFO Client 4, noise level: 0.6277, real noise ratio: 0.5569, real noise num: 1521.0000
+FedAvg - 2023-08-01 20:34:35,421 loader.py[line:212] INFO Client 6, noise level: 0.8956, real noise ratio: 0.8037, real noise num: 5156.0000
+FedAvg - 2023-08-01 20:34:35,421 loader.py[line:212] INFO Client 7, noise level: 0.7251, real noise ratio: 0.6351, real noise num: 1927.0000
+FedAvg - 2023-08-01 20:34:35,422 loader.py[line:212] INFO Client 8, noise level: 0.9779, real noise ratio: 0.8816, real noise num: 5370.0000
+FedAvg - 2023-08-01 20:34:35,422 loader.py[line:212] INFO Client 9, noise level: 0.6232, real noise ratio: 0.5608, real noise num: 2512.0000
+FedAvg - 2023-08-01 20:34:35,475 loader.py[line:330] INFO whole dataset noise label num is 21327
+FedAvg - 2023-08-01 20:34:35,526 loader.py[line:342] INFO train_dl_global number = 782
+FedAvg - 2023-08-01 20:34:35,526 loader.py[line:343] INFO test_dl_global number = 157
+FedAvg - 2023-08-01 20:34:35,556 loader.py[line:370] INFO client_index = 0, local_sample_number = 7615, batch_num_train_local = 119
+FedAvg - 2023-08-01 20:34:35,577 loader.py[line:370] INFO client_index = 1, local_sample_number = 5142, batch_num_train_local = 81
+FedAvg - 2023-08-01 20:34:35,605 loader.py[line:370] INFO client_index = 2, local_sample_number = 7498, batch_num_train_local = 118
+FedAvg - 2023-08-01 20:34:35,615 loader.py[line:370] INFO client_index = 3, local_sample_number = 865, batch_num_train_local = 14
+FedAvg - 2023-08-01 20:34:35,630 loader.py[line:370] INFO client_index = 4, local_sample_number = 2731, batch_num_train_local = 43
+FedAvg - 2023-08-01 20:34:35,653 loader.py[line:370] INFO client_index = 5, local_sample_number = 6130, batch_num_train_local = 96
+FedAvg - 2023-08-01 20:34:35,678 loader.py[line:370] INFO client_index = 6, local_sample_number = 6415, batch_num_train_local = 101
+FedAvg - 2023-08-01 20:34:35,694 loader.py[line:370] INFO client_index = 7, local_sample_number = 3034, batch_num_train_local = 48
+FedAvg - 2023-08-01 20:34:35,717 loader.py[line:370] INFO client_index = 8, local_sample_number = 6091, batch_num_train_local = 96
+FedAvg - 2023-08-01 20:34:35,737 loader.py[line:370] INFO client_index = 9, local_sample_number = 4479, batch_num_train_local = 70
+FedAvg - 2023-08-01 20:34:36,418 FedManager.py[line:75] INFO ################Communication round : 0
+FedAvg - 2023-08-01 20:34:36,435 server.py[line:36] INFO sampling client_indexes = [9 0 5 2 6]
+FedAvg - 2023-08-01 20:34:55,428 FedManager.py[line:111] INFO This Round 0, updated clients is [9, 0, 5, 2, 6]
+FedAvg - 2023-08-01 20:34:55,429 FedManager.py[line:116] INFO sampling client_indexes = [9 0 5 2 6] finished the update and upload the info
+FedAvg - 2023-08-01 20:34:55,429 server.py[line:58] INFO updata global model
+FedAvg - 2023-08-01 20:34:57,674 server.py[line:45] INFO This round: 0 acc is: 14.639999389648438
+FedAvg - 2023-08-01 20:34:57,674 FedManager.py[line:75] INFO ################Communication round : 1
+FedAvg - 2023-08-01 20:34:57,694 server.py[line:36] INFO sampling client_indexes = [1 9 5 7 2]
+FedAvg - 2023-08-01 20:35:11,003 FedManager.py[line:111] INFO This Round 1, updated clients is [1, 9, 5, 7, 2]
+FedAvg - 2023-08-01 20:35:11,005 FedManager.py[line:116] INFO sampling client_indexes = [1 9 5 7 2] finished the update and upload the info
+FedAvg - 2023-08-01 20:35:11,005 server.py[line:58] INFO updata global model
+FedAvg - 2023-08-01 20:35:13,242 server.py[line:45] INFO This round: 1 acc is: 10.449999809265137
+FedAvg - 2023-08-01 20:35:13,242 FedManager.py[line:75] INFO ################Communication round : 2
+FedAvg - 2023-08-01 20:35:13,264 server.py[line:36] INFO sampling client_indexes = [5 4 3 1 2]
+FedAvg - 2023-08-01 20:35:24,648 FedManager.py[line:111] INFO This Round 2, updated clients is [5, 4, 3, 1, 2]
+FedAvg - 2023-08-01 20:35:24,649 FedManager.py[line:116] INFO sampling client_indexes = [5 4 3 1 2] finished the update and upload the info
+FedAvg - 2023-08-01 20:35:24,649 server.py[line:58] INFO updata global model
+FedAvg - 2023-08-01 20:35:26,901 server.py[line:45] INFO This round: 2 acc is: 15.379999160766602
+FedAvg - 2023-08-01 20:35:26,902 FedManager.py[line:75] INFO ################Communication round : 3
+FedAvg - 2023-08-01 20:35:26,923 server.py[line:36] INFO sampling client_indexes = [5 8 9 6 0]
+FedAvg - 2023-08-01 20:35:42,471 FedManager.py[line:111] INFO This Round 3, updated clients is [5, 8, 9, 6, 0]
+FedAvg - 2023-08-01 20:35:42,472 FedManager.py[line:116] INFO sampling client_indexes = [5 8 9 6 0] finished the update and upload the info
+FedAvg - 2023-08-01 20:35:42,472 server.py[line:58] INFO updata global model
+FedAvg - 2023-08-01 20:35:44,747 server.py[line:45] INFO This round: 3 acc is: 18.029998779296875
+FedAvg - 2023-08-01 20:35:44,747 FedManager.py[line:75] INFO ################Communication round : 4
+FedAvg - 2023-08-01 20:35:44,767 server.py[line:36] INFO sampling client_indexes = [8 3 4 9 0]
+FedAvg - 2023-08-01 20:35:55,927 FedManager.py[line:111] INFO This Round 4, updated clients is [8, 3, 4, 9, 0]
+FedAvg - 2023-08-01 20:35:55,928 FedManager.py[line:116] INFO sampling client_indexes = [8 3 4 9 0] finished the update and upload the info
+FedAvg - 2023-08-01 20:35:55,929 server.py[line:58] INFO updata global model
+FedAvg - 2023-08-01 20:35:58,189 server.py[line:45] INFO This round: 4 acc is: 18.829999923706055
+FedAvg - 2023-08-01 20:35:58,189 FedManager.py[line:75] INFO ################Communication round : 5
+FedAvg - 2023-08-01 20:35:58,209 server.py[line:36] INFO sampling client_indexes = [4 8 5 3 1]
+FedAvg - 2023-08-01 20:36:08,992 FedManager.py[line:111] INFO This Round 5, updated clients is [4, 8, 5, 3, 1]
+FedAvg - 2023-08-01 20:36:08,993 FedManager.py[line:116] INFO sampling client_indexes = [4 8 5 3 1] finished the update and upload the info
+FedAvg - 2023-08-01 20:36:08,993 server.py[line:58] INFO updata global model
+FedAvg - 2023-08-01 20:36:11,249 server.py[line:45] INFO This round: 5 acc is: 25.619998931884766
+FedAvg - 2023-08-01 20:36:11,250 FedManager.py[line:75] INFO ################Communication round : 6
+FedAvg - 2023-08-01 20:36:11,270 server.py[line:36] INFO sampling client_indexes = [6 7 3 1 9]
+FedAvg - 2023-08-01 20:36:21,445 FedManager.py[line:111] INFO This Round 6, updated clients is [6, 7, 3, 1, 9]
+FedAvg - 2023-08-01 20:36:21,446 FedManager.py[line:116] INFO sampling client_indexes = [6 7 3 1 9] finished the update and upload the info
+FedAvg - 2023-08-01 20:36:21,447 server.py[line:58] INFO updata global model
+FedAvg - 2023-08-01 20:36:23,707 server.py[line:45] INFO This round: 6 acc is: 17.15999984741211
+FedAvg - 2023-08-01 20:36:23,708 FedManager.py[line:75] INFO ################Communication round : 7
+FedAvg - 2023-08-01 20:36:23,728 server.py[line:36] INFO sampling client_indexes = [5 7 0 4 9]
+FedAvg - 2023-08-01 20:36:35,858 FedManager.py[line:111] INFO This Round 7, updated clients is [5, 7, 0, 4, 9]
+FedAvg - 2023-08-01 20:36:35,858 FedManager.py[line:116] INFO sampling client_indexes = [5 7 0 4 9] finished the update and upload the info
+FedAvg - 2023-08-01 20:36:35,859 server.py[line:58] INFO updata global model
+FedAvg - 2023-08-01 20:36:38,126 server.py[line:45] INFO This round: 7 acc is: 18.029998779296875
+FedAvg - 2023-08-01 20:36:38,126 FedManager.py[line:75] INFO ################Communication round : 8
+FedAvg - 2023-08-01 20:36:38,146 server.py[line:36] INFO sampling client_indexes = [2 5 8 4 9]
+FedAvg - 2023-08-01 20:36:51,738 FedManager.py[line:111] INFO This Round 8, updated clients is [2, 5, 8, 4, 9]
+FedAvg - 2023-08-01 20:36:51,739 FedManager.py[line:116] INFO sampling client_indexes = [2 5 8 4 9] finished the update and upload the info
+FedAvg - 2023-08-01 20:36:51,739 server.py[line:58] INFO updata global model
+FedAvg - 2023-08-01 20:36:54,018 server.py[line:45] INFO This round: 8 acc is: 23.81999969482422
+FedAvg - 2023-08-01 20:36:54,018 FedManager.py[line:75] INFO ################Communication round : 9
+FedAvg - 2023-08-01 20:36:54,039 server.py[line:36] INFO sampling client_indexes = [4 3 9 1 6]
+FedAvg - 2023-08-01 20:37:04,072 FedManager.py[line:111] INFO This Round 9, updated clients is [4, 3, 9, 1, 6]
+FedAvg - 2023-08-01 20:37:04,073 FedManager.py[line:116] INFO sampling client_indexes = [4 3 9 1 6] finished the update and upload the info
+FedAvg - 2023-08-01 20:37:04,073 server.py[line:58] INFO updata global model
+FedAvg - 2023-08-01 20:37:06,358 server.py[line:45] INFO This round: 9 acc is: 34.37999725341797
+FedAvg - 2023-08-01 20:37:06,359 FedManager.py[line:75] INFO ################Communication round : 10
+FedAvg - 2023-08-01 20:37:06,379 server.py[line:36] INFO sampling client_indexes = [1 0 8 9 5]
+FedAvg - 2023-08-01 20:37:21,289 FedManager.py[line:111] INFO This Round 10, updated clients is [1, 0, 8, 9, 5]
+FedAvg - 2023-08-01 20:37:21,290 FedManager.py[line:116] INFO sampling client_indexes = [1 0 8 9 5] finished the update and upload the info
+FedAvg - 2023-08-01 20:37:21,290 server.py[line:58] INFO updata global model
+FedAvg - 2023-08-01 20:37:23,556 server.py[line:45] INFO This round: 10 acc is: 21.34000015258789
+FedAvg - 2023-08-01 20:37:23,556 FedManager.py[line:75] INFO ################Communication round : 11
+FedAvg - 2023-08-01 20:37:23,577 server.py[line:36] INFO sampling client_indexes = [0 9 6 8 5]
+FedAvg - 2023-08-01 20:37:39,083 FedManager.py[line:111] INFO This Round 11, updated clients is [0, 9, 6, 8, 5]
+FedAvg - 2023-08-01 20:37:39,085 FedManager.py[line:116] INFO sampling client_indexes = [0 9 6 8 5] finished the update and upload the info
+FedAvg - 2023-08-01 20:37:39,085 server.py[line:58] INFO updata global model
+FedAvg - 2023-08-01 20:37:41,351 server.py[line:45] INFO This round: 11 acc is: 33.5099983215332
+FedAvg - 2023-08-01 20:37:41,351 FedManager.py[line:75] INFO ################Communication round : 12
+FedAvg - 2023-08-01 20:37:41,371 server.py[line:36] INFO sampling client_indexes = [8 3 4 5 0]
+FedAvg - 2023-08-01 20:37:53,246 FedManager.py[line:111] INFO This Round 12, updated clients is [8, 3, 4, 5, 0]
+FedAvg - 2023-08-01 20:37:53,247 FedManager.py[line:116] INFO sampling client_indexes = [8 3 4 5 0] finished the update and upload the info
+FedAvg - 2023-08-01 20:37:53,247 server.py[line:58] INFO updata global model
+FedAvg - 2023-08-01 20:37:55,528 server.py[line:45] INFO This round: 12 acc is: 24.309999465942383
+FedAvg - 2023-08-01 20:37:55,528 FedManager.py[line:75] INFO ################Communication round : 13
+FedAvg - 2023-08-01 20:37:55,549 server.py[line:36] INFO sampling client_indexes = [3 0 9 7 5]
+FedAvg - 2023-08-01 20:38:06,792 FedManager.py[line:111] INFO This Round 13, updated clients is [3, 0, 9, 7, 5]
+FedAvg - 2023-08-01 20:38:06,794 FedManager.py[line:116] INFO sampling client_indexes = [3 0 9 7 5] finished the update and upload the info
+FedAvg - 2023-08-01 20:38:06,794 server.py[line:58] INFO updata global model
+FedAvg - 2023-08-01 20:38:09,068 server.py[line:45] INFO This round: 13 acc is: 30.869998931884766
+FedAvg - 2023-08-01 20:38:09,069 FedManager.py[line:75] INFO ################Communication round : 14
+FedAvg - 2023-08-01 20:38:09,089 server.py[line:36] INFO sampling client_indexes = [3 4 0 8 2]
+FedAvg - 2023-08-01 20:38:21,701 FedManager.py[line:111] INFO This Round 14, updated clients is [3, 4, 0, 8, 2]
+FedAvg - 2023-08-01 20:38:21,702 FedManager.py[line:116] INFO sampling client_indexes = [3 4 0 8 2] finished the update and upload the info
+FedAvg - 2023-08-01 20:38:21,702 server.py[line:58] INFO updata global model
+FedAvg - 2023-08-01 20:38:24,003 server.py[line:45] INFO This round: 14 acc is: 28.599998474121094
+FedAvg - 2023-08-01 20:38:24,003 FedManager.py[line:75] INFO ################Communication round : 15
+FedAvg - 2023-08-01 20:38:24,023 server.py[line:36] INFO sampling client_indexes = [2 7 4 6 1]
+FedAvg - 2023-08-01 20:38:36,672 FedManager.py[line:111] INFO This Round 15, updated clients is [2, 7, 4, 6, 1]
+FedAvg - 2023-08-01 20:38:36,673 FedManager.py[line:116] INFO sampling client_indexes = [2 7 4 6 1] finished the update and upload the info
+FedAvg - 2023-08-01 20:38:36,673 server.py[line:58] INFO updata global model
+FedAvg - 2023-08-01 20:38:38,946 server.py[line:45] INFO This round: 15 acc is: 33.22999954223633
+FedAvg - 2023-08-01 20:38:38,947 FedManager.py[line:75] INFO ################Communication round : 16
+FedAvg - 2023-08-01 20:38:38,967 server.py[line:36] INFO sampling client_indexes = [3 4 5 8 2]
+FedAvg - 2023-08-01 20:38:50,851 FedManager.py[line:111] INFO This Round 16, updated clients is [3, 4, 5, 8, 2]
+FedAvg - 2023-08-01 20:38:50,852 FedManager.py[line:116] INFO sampling client_indexes = [3 4 5 8 2] finished the update and upload the info
+FedAvg - 2023-08-01 20:38:50,853 server.py[line:58] INFO updata global model
+FedAvg - 2023-08-01 20:38:53,124 server.py[line:45] INFO This round: 16 acc is: 25.94999885559082
+FedAvg - 2023-08-01 20:38:53,124 FedManager.py[line:75] INFO ################Communication round : 17
+FedAvg - 2023-08-01 20:38:53,145 server.py[line:36] INFO sampling client_indexes = [8 6 2 3 1]
+FedAvg - 2023-08-01 20:39:06,511 FedManager.py[line:111] INFO This Round 17, updated clients is [8, 6, 2, 3, 1]
+FedAvg - 2023-08-01 20:39:06,512 FedManager.py[line:116] INFO sampling client_indexes = [8 6 2 3 1] finished the update and upload the info
+FedAvg - 2023-08-01 20:39:06,512 server.py[line:58] INFO updata global model
+FedAvg - 2023-08-01 20:39:08,799 server.py[line:45] INFO This round: 17 acc is: 30.389999389648438
+FedAvg - 2023-08-01 20:39:08,799 FedManager.py[line:75] INFO ################Communication round : 18
+FedAvg - 2023-08-01 20:39:08,820 server.py[line:36] INFO sampling client_indexes = [9 1 0 2 5]

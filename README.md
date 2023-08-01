@@ -1,1 +1,1 @@
-# easy_FedAvg
+# FedAvg
